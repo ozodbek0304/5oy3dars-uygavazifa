@@ -5,8 +5,10 @@ import Features from "./Pages/Features";
 import Screenshot from "./Pages/Screenshot";
 import Blog from "./Pages/Blog";
 import Download from "./Pages/Download";
+import Products from "./Pages/Products";
 import { Routes, Route } from "react-router-dom";
 import Foother from "./Components/Foother";
+import Details from "./Pages/Details";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route path="/screenshot" element={<Screenshot />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/download" element={<Download />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/products/:productId" element={<Details />} />
       </Routes>
       <Foother />
     </div>

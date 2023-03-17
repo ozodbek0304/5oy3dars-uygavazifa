@@ -112,6 +112,16 @@ const Header = () => {
               <div className="btn">DOWNLOAD</div>
             </Link>
           </li>
+          <li>
+            <Link
+              className={`text-${
+                pathname === "/download" ? "primary" : "reset"
+              } text-decoration-none`}
+              to="/products"
+            >
+              PRODUCTS
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
